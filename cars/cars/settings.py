@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 CSRF_TRUSTED_ORIGINS = [
     'https://cars-backend-production.up.railway.app/',
+    'https://cars-backend-production.up.railway.app'
 ]
 
 CORS_ORIGIN_WHITELIST = [
