@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-t-3*inzfsft(y(9s1^lvauz$ofu&6h4ci)xulcbqxz(-va7e@^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+# Application definition
+CSRF_TRUSTED_ORIGINS = [
+    'cars-backend.vercel.app',
+]
 
 
 # Application definition
@@ -141,7 +145,7 @@ CSRF_COOKIE_NAME = "X-CSRFToken"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
