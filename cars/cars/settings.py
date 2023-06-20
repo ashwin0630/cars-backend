@@ -29,13 +29,11 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 CSRF_TRUSTED_ORIGINS = [
     'https://cars-backend-production.up.railway.app/',
-    'https://cars-backend.vercel.app/',
 ]
 
 CORS_ORIGIN_WHITELIST = [
     # Add other trusted origins if any
     "https://cars-backend-production.up.railway.app",
-    'https://cars-backend.vercel.app/',
 ]
 
 
