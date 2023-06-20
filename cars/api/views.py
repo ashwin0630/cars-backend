@@ -44,13 +44,13 @@ def postcar(requst):
     
 @csrf_protect
 def formpage(request):
-    form=carform()
+    form = carform()
     if request.method == "POST":
         form = carform(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('/')
-        else:
-            form = carform()
+    else:
+        form = carform()
 
     return render(request, "index.html", {'form': form})
