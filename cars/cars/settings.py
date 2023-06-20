@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 # Application definition
 CSRF_TRUSTED_ORIGINS = [
-    'cars-backend.vercel.app',
+    'https://cars-backend-production.up.railway.app/',
 ]
 
 
