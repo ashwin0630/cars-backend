@@ -4,7 +4,7 @@ from .models import car_details
 class carserializer(ModelSerializer):
     class Meta:
         model=car_details
-        fields=['company','model','total_km','fuel_type','car_image']
+        fields='__all__'
 
 
 class mainserializer(ModelSerializer):
